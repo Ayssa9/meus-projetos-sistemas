@@ -1,0 +1,79 @@
+
+
+
+📌 Nome do Projeto:
+
+Sistema de Cadastro e Exibição de Notas de Alunos
+
+
+
+ 💻 **Linguagem Usada:
+
+Portugol(compatível com o **Portugol Studio**)
+
+
+
+ 🧠 Descrição do Funcionamento:
+
+Este projeto é um sistema simples e direto que permite:
+
+1. Cadastro de 3 alunos(fixo no código).
+2. Entrada de 5 notas para cada aluno.
+3. Armazenamento das informações em:
+
+   Um vetor para nomes.
+   Uma matriz para as notas (3x5).
+4. Exibição em formato de tabela, mostrando o nome do aluno e suas 5 notas.
+
+---
+
+📋 **Passos executados pelo programa:
+
+Entrada de dados:
+
+    Solicita o nome de cada aluno.
+    Solicita 5 notas para cada aluno (uma por disciplina ou avaliação).
+
+saída de dados**:
+
+   Após o preenchimento, o sistema imprime uma tabela no console com:
+
+     Nome de cada aluno.
+     Notas digitadas, separadas por espaço.
+
+
+
+▶️ Como Executar:
+
+1. Abra o Portugol Studio.
+2. Crie um novo projeto ou script.
+3. Cole o código fornecido.
+4. Pressione F9 ou clique em **Executar (▶️).
+5. Digite o nome e as 5 notas de cada um dos 3 alunos.
+6. Após preencher os dados, o sistema exibirá as informações de forma tabulada.
+
+
+
+🛠️ Exemplo de Execução:
+
+Digite o nome do aluno 1: Ana
+Digite a nota 1 de Ana: 7.5
+Digite a nota 2 de Ana: 8.0
+
+
+Tabela de Notas
+Aluno: Ana -> Notas: 7.5  8.0  6.5  9.0  7.0
+Aluno: Bruno -> Notas: ...
+Aluno: Carla -> Notas: ...
+
+
+
+
+ ✅ Sugestões de Melhoria:
+
+ Calcular e exibir a média final de cada aluno.
+ Exibir se o aluno foi aprovado ou reprovado** com base na média.
+ Permitir cadastrar mais alunos, usando uma variável dinâmica ao invés de valor fixo (`3`).
+ Validar se as notas digitadas estão dentro do intervalo de 0 a 10.
+
+
