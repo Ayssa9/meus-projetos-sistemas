@@ -1,0 +1,102 @@
+
+
+📌 Nome do Projeto:
+
+Sistema de Cadastro de Estudantes com Validação de E-mail e Controle de Responsáveis
+
+
+ 💻 Linguagem Usada:
+
+Portugol(compatível com o Portugol Studio)
+
+
+
+🧠 Descrição do Funcionamento:
+
+Este projeto implementa um **sistema de cadastro de alunos**, que realiza coleta, validação e exibição de dados, incluindo o tratamento de responsáveis para menores de idade. Ele é ideal para fins **educacionais** ou como **projeto de introdução à programação estruturada**.
+
+ Funcionalidades principais:
+
+1. Coleta de Dados dos Estudantes:
+
+   Nome
+   Idade
+   E-mail (com verificação de formato)
+   Número de matrícula (com verificação de duplicidade)
+   Curso
+   Turno
+
+2. Validação de Matrícula:
+
+   Garante que nenhuma matrícula seja repetida entre os estudantes cadastrados.
+
+3. Validação de E-mail:
+
+    Verifica se o e-mail contém obrigatoriamente o caractere `@` e o ponto `.`.
+    Caso não contenha, o usuário deve digitar novamente até corrigir.
+
+4. Responsável para Menores de Idade:**
+
+   Caso o aluno tenha menos de 18 anos, o sistema pede:
+
+     Nome do responsável
+     Telefone
+     E-mail do responsável (também validado)
+
+5. Turno de Estudo:
+
+   O estudante escolhe entre as opções: Manhã (1), Tarde (2) ou outro (tratado como "indf").
+
+6. Exibição da Ficha do Estudante:**
+
+   Após a coleta de dados dos 10 estudantes, o sistema exibe as informações completas de cada um.
+
+
+
+ ▶️ Como Executar:
+
+1. Abra o Portugol Studio.
+2. Crie um novo projeto ou script.
+3. **Cole o código fornecido**.
+4. Pressione **F9** ou clique em **Executar (▶️)**.
+5. O programa solicitará o preenchimento de dados para **10 alunos** (fixo na variável `a = 10`).
+6. Preencha corretamente os dados solicitados no console.
+7. Após o último aluno, o sistema exibirá a ficha completa de cada estudante.
+
+
+
+🔧 Observações Técnicas:
+
+Validação de e-mail** contém uma pequena falha lógica: a última verificação repete a condição `verifc == 0`. O correto seria verificar `verifc2 == 0` no último `senao se`. Exemplo corrigido:
+
+    portugol
+  senao se(verifc2 == 0){
+      escreva("\nO e-mail não apresenta '.', reescreva: \n")
+      leia(Vemail2)
+  }
+  
+
+ A variável `tur` permite 3 entradas, mas o `caso 3` (para "Noite") **não está implementado** no `defTurno()`. Você pode adicionar:
+
+     portugol
+  caso 3:
+      Tur = "noite"
+      pare
+  
+
+ O telefone do responsável (`tResp`) é lido mas não solicitado no momento da coleta. Para coletar corretamente, adicione:
+    portugol
+  escreva("\nTelefone do responsável: \n")
+  leia(telresp[t])
+  
+
+
+
+✅ Sugestões de Melhorias:
+
+Permitir cadastrar um número variável de alunos.
+Adicionar exportação dos dados para um arquivo `.txt`.
+Permitir remover ou editar alunos cadastrados.
+Interface gráfica com menu interativo (simples).
+
+
